@@ -1,0 +1,12 @@
+extends layout
+
+block main
+    h2= name
+    ul
+        each item in ingredients
+            li= item
+    p= instructions
+    img(src=`/static/img/${image}`, alt="food")
+    form(action="/recipes/page" method="post")
+        button(type="submit") Next Page
+        

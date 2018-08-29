@@ -1,0 +1,29 @@
+{
+    "data": {
+        "title": "My Favorite Recipes",
+        "recipes" : [
+            {
+                "name": "Nachos",
+                "instructions" : "Spread tortilla chips on the prepared baking sheet; top with Cheddar cheese and dot with refried beans and ground beef mixture. Broil in the preheated oven until cheese is melted, watching carefully to prevent burning, 3 to 5 minutes. Top nachos with salsa, sour cream, black olives, green onions, and jalapeno peppers.",
+                "ingredients" : ["chips", "cheese", "salsa", "sour cream", "jalapenos"],
+                "image": "nachos.jpeg"
+            },
+            {
+                "name": "Macaroni",
+                "instructions" : "Cook macaroni according to the package directions. Drain. In a saucepan, melt butter or margarine over medium heat. Stir in enough flour to make a roux. Melt butter or margarine in a skillet over medium heat. Add breadcrumbs and brown. Bake at 350 ",
+                "ingredients" : ["macaroni noodles", "cheese", "milk", "flour", "butter"],
+                "image": "mac.jpeg"
+            },
+            {
+                "name": "Cake",
+                "instructions" : "Directions. Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x9 inch pan or line a muffin pan with paper liners. In a medium bowl, cream together the sugar and butter. Beat in the eggs, one at a time, then stir in the vanilla. Bake for 30 to 40 minutes in the preheated oven. ",
+                "ingredients" : ["sugar", "eggs", "milk", "flour", "butter"],
+                "image": "cake.jpeg"
+            }
+
+
+
+
+        ]
+    }
+}

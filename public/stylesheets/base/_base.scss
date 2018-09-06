@@ -1,0 +1,29 @@
+/**********************
+base styles
+***********************/
+
+
+body {
+    background: $white;
+    font-family: $font-family;
+    text-align: center;
+ 
+}
+
+.wrapper {
+    max-width: 85%;
+    color: $primary-dark;
+    @include center;
+}
+
+
+
+/**********************
+link styles
+***********************/
+
+a {
+    text-decoration: none;
+    color: $secondary;
+}
+

@@ -17,16 +17,34 @@ router.post('/', (req, res) => {
 
 
 
-router.get('/recipes', (req, res) => {
+// router.get('/recipes', (req, res) => {
+//     res.render('recipes', {
+//         name: recipes[0].name,
+//         instructions:  recipes[0].instructions,
+//         ingredients: recipes[0].ingredients,
+//         image: recipes[0].image
+//     });
+// });
+
+router.get('/recipes/:page', (req, res) => {
     res.render('recipes', {
-        name: recipes[0].name,
-        instructions:  recipes[0].instructions,
-        ingredients: recipes[0].ingredients,
-        image: recipes[0].image
+        name: recipes[req.params.page].name,
+        instructions:  recipes[req.params.page].instructions,
+        ingredients: recipes[req.params.page].ingredients,
+        image: recipes[req.params.page].image
     });
 });
 
 
+router.post('/recipes/:page', (req, res) => {
+    if(nextPage < (recipes.length - 1)) {
+        nextPage += 1; 
+        res.redirect(`/recipes/${nextPage}`);
+    } else {
+        nextPage = 0;
+        res.redirect('/');
+    }
+});
 
 
 

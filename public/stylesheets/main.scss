@@ -1,0 +1,45 @@
+/**********************
+partial imports
+***********************/
+
+@import 'normalize/normalize';
+
+@import 'utilities/variables',
+        'utilities/mixins';
+
+
+@import 'base/base';
+
+
+
+
+
+/**********************
+Document Styles
+***********************/
+
+
+header {
+    background: $primary;
+    color: $white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid $primary-dark;
+    h1 {
+        margin: 0 auto 0;
+    }
+}
+
+
+.form-label {
+    margin-right: .75rem;
+}
+
+.welcome-form input {
+    margin-top: 1rem;
+}
+
+
+footer {
+    margin-top: 3rem;
+}

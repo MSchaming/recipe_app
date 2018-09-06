@@ -7,6 +7,6 @@ block main
             a(href="/recipes/0") View Recipes   
     else
         h2 Welcome!
-        form(action="/" method="post")
-            label(for="name") Please Enter Your Name
-                input(type="text" id="name" name="user" placeholder="Enter Name")
+        form(class="welcome-form" action="/" method="post")
+            label(class="form-label" for="name") Please Enter Your Name
+            input(type="text" id="name" name="user" placeholder="Enter Name")
